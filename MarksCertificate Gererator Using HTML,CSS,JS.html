@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NIC Card </title>
+	<style type="text/css">
+		 .image{
+		 	width:150px;
+		 	height: 150px;
+		 	margin-left: 580px;
+		 	margin-top: 10px;
+		 }
+		.main1{
+			background-color: cyan;
+            height:375px;
+            border-top-right-radius:500px;
+            border-top-left-radius: 500px;
+		}
+		.p2{margin-left: 250px;
+			margin-top: 30px;}
+		.main{
+			background-color:darkblue;
+			border-top-right-radius:280px;
+            border-top-left-radius: 280px;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            height: 650px;
+
+					}
+	.p1 input[type="text"]{
+	border-radius: 10px;
+	padding: 10px;
+	width: 23%;
+    font-size:14px;
+	border:none;
+	margin:7px;
+	height:8px;
+	margin-left:50px;
+		}
+		
+	.p2 input[type="text"]{
+	border-radius: 10px;
+	padding: 10px;
+	width: 10%;
+    font-size:14px;
+	border:none;
+	margin:10px;
+	height:0px;
+	margin-left:0px;
+		}
+		input[type=submit]{
+background:orange;
+color:#fff;
+font-weight:bold;
+height:40px;
+margin-left:360px;
+width: 120px;
+border-radius: 40px;
+}
+	</style>
+	<script type="text/javascript">
+		function Result(){
+	  var a,b,c,d,e,f,g,h,i,Obtained,p;
+      a=Number(document.getElementById("sec1").value);
+      b=Number(document.getElementById("sec2").value);
+      c=Number(document.getElementById("sec3").value);
+      d=Number(document.getElementById("sec4").value);
+      e=Number(document.getElementById("sec5").value);
+      f=Number(document.getElementById("sec6").value);
+      g=Number(document.getElementById("sec7").value);
+      h=Number(document.getElementById("sec8").value);
+      i=Number(document.getElementById("sec9").value);
+     Total_marks=600;
+     Obtained=a+b+c+d+e+f+g+h+i;
+     document.getElementById("answer").value= Obtained;
+     p=(Obtained*100)/Total_marks;
+     document.getElementById("answer1").value= p;
+     if(p>=85 && p<=100){
+        document.getElementById("answer2").value= "A+";
+        document.getElementById("answer3").value= "Excellent";}
+     else if(p>=75 && p<=85){
+        document.getElementById("answer2").value= "A";
+        document.getElementById("answer3").value= "Very Good";}
+     else if(p>=65 && p<=75){
+        document.getElementById("answer2").value= "B+";
+        document.getElementById("answer3").value= "Good";}
+     else if(p>=60 && p<=65){
+        document.getElementById("answer2").value= "B";
+        document.getElementById("answer3").value= "Fair";}
+     else if(p>=55 && p<=60){
+        document.getElementById("answer2").value= "C+";
+        document.getElementById("answer3").value= "Just Pass";}
+     else if(p>=50 && p<=55){
+        document.getElementById("answer2").value= "C";
+        document.getElementById("answer3").value= "Pass";}
+     else
+        document.getElementById("answer2").value= "Fail";
+        document.getElementById("answer3").value= "Fail";
+     if(p>=85 && p<=100){
+        document.getElementById("answer3").value= "Excellent";}
+     else if(p>=75 && p<=85){
+        document.getElementById("answer3").value= "Very Good";}
+     else if(p>=65 && p<=75){
+        document.getElementById("answer3").value= "Good";}
+     else if(p>=60 && p<=65){
+        document.getElementById("answer3").value= "Fair";}
+     else if(p>=55 && p<=60){
+        document.getElementById("answer3").value= "Just Pass";}
+     else if(p>=50 && p<=55){
+        document.getElementById("answer3").value= "Pass";}
+     else
+        document.getElementById("answer3").value= "Fail";
+ }
+	</script>
+
+</head>
+<body>
+	<div class="main">
+		<div class="main1">
+			<img  class="image" src="mEHRANLOGO.png">
+			<center><h2>Mehran University of Engineering & Technology Jamshoro,Sindh</h2>
+			<u><h3>Departmant Of Computer Systems Engineering</h3></u>
+			<u><h3>Marks Certificate</h3></u></center>
+			<p class="p2">
+
+			Name:<input type="text" placeholder="Enter Name" >
+			Father's Name<input type="text" placeholder="Entr Father Name">
+			Roll No<input type="text" placeholder="Enter Roll No">
+		    Semester<input type="text" placeholder="Enter Semester"></p>
+		</div>
+<p class="p1"><input type="text" id="sec1" placeholder="Enetr the Marks of Web Engineering(TH)">
+<input type="text" id="sec2" placeholder="Enetr the Marks of Web Engineering(PR)"><br>
+<input type="text" id="sec3" placeholder="Enetr the Marks of Communication System(TH)">
+<input type="text" id="sec4" placeholder="Enetr the Marks of Communication System(PR)"><br>
+<input type="text" id="sec5" placeholder="Enetr the Marks of Embedded System(TH)">
+<input type="text" id="sec6" placeholder="Enetr the Marks of Embedded System(PR)"><br>
+<input type="text" id="sec7" placeholder="Enetr the Marks of Mobile Application(TH)">
+<input type="text" id="sec8" placeholder="Enetr the Marks of Mobile Application(PR)"><br>
+<input style="margin-left: 250px;" type="text" id="sec9" placeholder="Enetr the Marks of Professional Ethics(TH)"><br>
+<input type="submit" value="Result" onclick="Result()">
+</p>
+<div style="float: right; margin-top: -270px;margin-right: 100px; border-color: white;">
+<table border="3" bgcolor="white"  width="350px" height="0px" align="center" cellspacing="3" cellpadding="6">
+<tr>
+<td>Total Marks</td>
+<td>Obtaied Marks</td>
+</tr>
+<tr>
+	<td>600</td>
+	<td ><input style=" border:0px;" type="text" id="answer"></td>
+</tr>
+</table >
+<table border="3" bgcolor="white"  width="350px" height="0px" align="center" cellspacing="3" cellpadding="8" >
+	<tr>
+	<td>Percentage</td>
+		<td><input style=" border:0px;margin-right :-25px;" type="text" id="answer1">%</td>
+
+</table>
+<table border="3" bgcolor="white"  width="350px" height="0px" align="center" cellspacing="5" cellpadding="10">
+	<tr>
+	<td>Grade</td>
+		<td><input style=" border:0px; margin-right :-65px;" type="text" id="answer2"></td>
+
+</table>
+<table border="3" bgcolor="white"  width="350px" height="0px" align="center" cellspacing="5" cellpadding="10">
+	<tr>
+	<td>Performance</td>
+		<td><input style=" border:0px; margin-right :20px;" type="text" id="answer3"></td>
+
+</table>
+</div>
+</div>
+</body>
+</html>
